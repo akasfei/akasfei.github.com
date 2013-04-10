@@ -85,7 +85,7 @@ a:focus {
   content: '';
   position: absolute;
   display: block;
-  right: 170px;
+  right: 100%;
   top: 0px;
   opacity: .5;
   z-index: -1;
@@ -98,7 +98,7 @@ a:focus {
   position: absolute;
   display: block;
   top: 0px;
-  left: 170px;
+  left: 100%;
   opacity: .5;
   z-index: -1;
   width: 1200px;
