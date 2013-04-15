@@ -15,5 +15,26 @@ $(document).ready(function (e){
     if ( tablink.parent().hasClass('active') )
       return;
     tablink.tab('show');
-  })
+  });
+  $('.sequence').click(function (e){
+    if ( $(this).hasClass('active') || $(this).hasClass('zoomed'))
+      return;
+    $('.sequence, .seq-node.active').removeClass('active');
+    $('.sequence').removeClass('zoomed');
+    $(this).addClass('active');
+  });
+  $('.sequence').on('click', '.seq-node', function (e){
+    var $this = $(this);
+    var $seq = $(this).parents('.sequence.active, .sequence.zoomed');
+    $seq.removeClass('active');
+    $seq.addClass('zoomed');
+    
+    if ( $this.hasClass('active') ) {
+      $seq.removeClass('zoomed');
+      $seq.addClass('active');
+      return $this.removeClass('active');
+    }
+    $('.sequence.zoomed .seq-node').removeClass('active');
+    $this.addClass('active');
+  }); 
 });
