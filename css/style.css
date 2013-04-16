@@ -5,7 +5,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "source-l";
+  font-family: "source-lt";
   src: url("../font/SourceSansPro/SourceSansPro-Light.otf");
   font-weight: normal;
   font-style: normal;
@@ -87,9 +87,9 @@ body > header,
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.title-logo:hover {
+/*.title-logo:hover {
   background-position: 20px -180px;
-}
+}*/
 .title-logo:hover > img {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -135,44 +135,25 @@ body > header .title-link:after{
   background: no-repeat url('../img/bracket-right-small.png');
 }
 
-/*.sequence {
-  margin-top: 55px;
-  border: 1px solid #ccc;
-  border-color: rgba(0,0,0,.25);
-  background-color: #eee;
-  background-color: rgba(255,255,255,.9);
-  font-weight: bold;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: margin 0.4s ease;
-  -moz-transition: margin 0.4s ease;
-  -o-transition: margin 0.4s ease;
-  transition: margin 0.4s ease;
-}*/
-
-
-/*.seq-group .seq-grouptitle:after{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: .4;
-  background: repeat center center url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTc3ODdDMTc5QzVCMTFFMkIyMzNFNzEyMEVBMDYyQUQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTc3ODdDMTg5QzVCMTFFMkIyMzNFNzEyMEVBMDYyQUQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1Nzc4N0MxNTlDNUIxMUUyQjIzM0U3MTIwRUEwNjJBRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1Nzc4N0MxNjlDNUIxMUUyQjIzM0U3MTIwRUEwNjJBRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjTR6/IAAABGSURBVHja7NaxEQAgCEPR4EosyILMhOAxgAV0+XeR8rVKRBiAmmI+RwI16zs9k3z0SUsdLEeAAAECBAgQ+Aa8vy0b2RVgALJUU6x3knDnAAAAAElFTkSuQmCC');
-}*/
-
 .seq-group {
   float: left;
   margin-right: 16px;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .seq-group,
 .seq-group-body {
   position: relative;
   display: inline-block;
+}
+
+.seq-group.active,
+.seq-group.zoomed {
+  opacity: 1;
 }
 
 .seq-group .seq-grouptitle{
@@ -186,7 +167,7 @@ body > header .title-link:after{
   font-size: 20px;
   line-height: 24px;
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.4;
   -webkit-transition: opacity 0.2s ease;
   -moz-transition: opacity 0.2s ease;
   -o-transition: opacity 0.2s ease;
@@ -198,11 +179,6 @@ body > header .title-link:after{
   display: inline-block;
   height: 240px;
   width: 40px;
-  opacity: 0.6;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   background: top left no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOFJREFUeNrU2dENgzAMBNCoE3SUbsxIHSlFiKpqSoLtnOmdpfzwkycQxjlKAVatdVnXc133wlY77l1cyAbHhWxwCxWyxe3XOO7kEa4DvB7Zww2A1yFHuBNgPvIMZwDmIS04IxCPtOIcQBzSg3MC55FeXAAYR0ZwQaAfGcVNAO3IGdwkcEOm4gDA/r4IHAj4uz8KBwR+HEgcGLh5boW7HsyP+LvtkL0kxz2RpM2MG/a/G3X61yQdJzEsSIxbEgOrxMgvcWiSOHZKHNwlog+J8EgifpMIMCUiYIkQPfM3xEuAAQCNF7zVwR83CAAAAABJRU5ErkJggg==');
 }
 .seq-indicator:after {
@@ -225,11 +201,12 @@ body > header .title-link:after{
   opacity: 0.8;
 }
 .seq-group.active .seq-grouptitle:hover,
-.seq-group.active .seq-indicator{
-  opacity: 0.95;
+.seq-group.active .seq-indicator {
+  opacity: 1;
 }
 
-.seq-group.active .seq-indicator:after {
+.seq-group.active .seq-indicator:after,
+.seq-group.zoomed .seq-indicator:after {
   height: 320px;
 }
 
@@ -295,18 +272,6 @@ body > header .title-link:after{
   background: no-repeat url('../img/syncbracket-bottom-small.png');
 }
 
-.sequence.active .seq-node,
-.sequence.zoomed .seq-node {
-  width: 40px;
-  margin-bottom: 4px;
-  background: #506070;
-}
-
-.sequence.zoomed .seq-node.active {
-  height: 40px;
-  background: #a1b5bb;
-}
-
 .sequence .sequence-caption {
   float: left;
   display: none;
@@ -314,10 +279,10 @@ body > header .title-link:after{
   margin-top: -80px;
   max-width: 420px;
   color: #fff;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .sequence-caption .sequence-title {
@@ -351,7 +316,7 @@ body > header .title-link:after{
   display: inline-block;
 }
 .sequence.zoomed .sequence-caption {
-  opacity: .1;
+  opacity: .2;
 }
 
 .seq-node {
@@ -367,6 +332,9 @@ body > header .title-link:after{
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+.seq-node:last-child {
+  margin-bottom: 0 !important;
+}
 
 .seq-node.active:first-child {
   margin-top: 0px;
@@ -375,6 +343,21 @@ body > header .title-link:after{
 .seq-node.active {
   margin-top: 30px;
   margin-bottom: 30px !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.sequence.active .seq-node,
+.sequence.zoomed .seq-node {
+  width: 40px;
+  margin-bottom: 4px;
+  background: #506070;
+}
+
+.sequence.zoomed .seq-node.active {
+  height: 40px;
+  background: #def;
 }
 
 .seq-node .seq-node-content {

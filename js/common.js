@@ -16,20 +16,23 @@ $(document).ready(function (e){
       return;
     tablink.tab('show');
   });
-  $('.sequence').on('click', '*:not(.seq-node-content, .seq-node-content > *, .seq-node)',function (e){
-    var $this = $(this).parents('.sequence');
-    if ( $this.hasClass('active') || $this.hasClass('zoomed'))
-      return;
-    $('.sequence, .seq-node.active').removeClass('active');
-    $('.sequence').removeClass('zoomed');
-    $this.addClass('active');
-  });
+
+
+  /* a sequence or its nodes are clicked */
   $('.sequence').on('click', '.seq-node', function (e){
     var $this = $(this);
-    var $seq = $(this).parents('.sequence.active, .sequence.zoomed');
+    var $seq = $(this).parents('.sequence');
+    var $group = $(this).parents('.seq-group');
+    if ( !($seq.hasClass('active') || $seq.hasClass('zoomed')) ) {
+      $('.sequence, .seq-node.active').removeClass('active');
+      $('.sequence').removeClass('zoomed');
+      $seq.addClass('active');
+      $group.removeClass('active');
+      $group.addClass('zoomed');
+      return;
+    }
     $seq.removeClass('active');
     $seq.addClass('zoomed');
-    
     if ( $this.hasClass('active') ) {
       $seq.removeClass('zoomed');
       $seq.addClass('active');
@@ -39,16 +42,79 @@ $(document).ready(function (e){
     $this.addClass('active');
   }); 
 
-  $('.seq-group').on('click', '*:not(.seq-node-content, .seq-node-content > *)',function (e){
+  /* a sequence group is clicked */
+  $('.seq-group').on('click', '.seq-group, *:not(.seq-node-content, .seq-node-content > *)',function (e){
     var $this = $(this).parents('.seq-group');
-    if ( $this.hasClass('active') )
+    if ( $this.hasClass('active') || $this.hasClass('zoomed') )
       return;
-    $('.seq-group').removeClass('active');
+    $('.seq-group').removeClass('active').removeClass('zoomed');
     $this.addClass('active');
   });
+
   $('.seq-indicator, .seq-grouptitle').click(function (e) {
     $group = $(this).parents('.seq-group');
     $('.seq-group .sequence.active, .seq-group .seq-node.active').removeClass('active');
-    $('.seq-group .sequence.zoomed').removeClass('zoomed');
+    $('.seq-group.zoomed, .seq-group .sequence.zoomed').removeClass('zoomed');
+  });
+
+  /* Clicking title links */
+  $('.title-link').click(function (e) {
+    var target = $(this).attr('data-target');
+    $(target).click();
+  });
+
+  /* keyboard controls */
+  $('html').keydown(function (e) {
+    var $this = $('.active');
+    var $target = null;
+    if ($this.hasClass('seq-node')) {
+      switch (e.which){
+        case 37:
+          $target = $this.parents('.sequence').prev('.sequence');
+          break;
+        case 38:
+          $target = $this.prev('.seq-node');
+          break;
+        case 39:
+          $target = $this.parents('.sequence').next('.sequence');
+          break;
+        case 40:
+          $target = $this.next('.seq-node');
+          break;
+      }
+    } else if ($this.hasClass('sequence')) {
+      switch (e.which) {
+        case 13:
+        case 32:
+          $target = $this.find('.seq-node:first-child');
+          break;
+        case 37:
+          $target = $this.prev('.sequence');
+          break;
+        case 39:
+          $target = $this.next('.sequence');
+          break;
+      }
+    } else if ($this.hasClass('seq-group')) {
+      switch (e.which) {
+        case 13:
+        case 32:
+          $target = $this.find('.sequence:first-child');
+          break;
+        case 37:
+          $target = $this.prev('.seq-group');
+          break;
+        case 39:
+          $target = $this.next('.seq-group');
+          break;
+      }
+    }
+    if ($target && $target.length > 0) {
+      if ($target.hasClass('sequence'))
+        $target = $target.find('.seq-node:first-child');
+      if ($target.hasClass('seq-group'))
+        $target = $target.find('.seq-grouptitle');
+      $target.trigger('click');
+    }
   });
 });
