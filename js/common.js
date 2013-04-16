@@ -27,7 +27,7 @@ $(document).ready(function (e){
       $('.sequence, .seq-node.active').removeClass('active');
       $('.sequence').removeClass('zoomed');
       $seq.addClass('active');
-      $group.removeClass('active');
+      $('.seq-group').removeClass('active').removeClass('zoomed');
       $group.addClass('zoomed');
       return;
     }
@@ -69,14 +69,21 @@ $(document).ready(function (e){
     var $target = null;
     if ($this.hasClass('seq-node')) {
       switch (e.which){
+        case 8:
+          $target = $this.parents('.sequence');
+          break;
         case 37:
           $target = $this.parents('.sequence').prev('.sequence');
+          if ($target.length < 1)
+            $target = $this.parents('.seq-group').prev('.seq-group').find('.sequence:last-child');
           break;
         case 38:
           $target = $this.prev('.seq-node');
           break;
         case 39:
           $target = $this.parents('.sequence').next('.sequence');
+          if ($target.length < 1)
+            $target = $this.parents('.seq-group').next('.seq-group').find('.sequence:first-child');
           break;
         case 40:
           $target = $this.next('.seq-node');
@@ -84,15 +91,28 @@ $(document).ready(function (e){
       }
     } else if ($this.hasClass('sequence')) {
       switch (e.which) {
+        case 8:
+          $target = $this.parents('.seq-group');
+          break;
         case 13:
         case 32:
           $target = $this.find('.seq-node:first-child');
           break;
         case 37:
           $target = $this.prev('.sequence');
+          if ($target.length < 1)
+            $target = $this.parents('.seq-group').prev('.seq-group').find('.sequence:last-child');
+          break;
+        case 38:
+          $target = $this.find('.seq-node:last-child');
           break;
         case 39:
           $target = $this.next('.sequence');
+          if ($target.length < 1)
+            $target = $this.parents('.seq-group').next('.seq-group').find('.sequence:first-child');
+          break;
+        case 40:
+          $target = $this.find('.seq-node:first-child');
           break;
       }
     } else if ($this.hasClass('seq-group')) {
@@ -108,7 +128,8 @@ $(document).ready(function (e){
           $target = $this.next('.seq-group');
           break;
       }
-    }
+    } else if (e.which == 8 || e.which == 13)
+      $target = $('.seq-group:first-child');
     if ($target && $target.length > 0) {
       if ($target.hasClass('sequence'))
         $target = $target.find('.seq-node:first-child');
