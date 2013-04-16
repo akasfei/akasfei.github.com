@@ -57,8 +57,8 @@ a:focus {
   text-decoration: underline;
 }
 body > header{
-  background: rgba(0,0,0,.1);
-  border-bottom: 2px solid rgba(0,0,0,.2);
+  background: rgba(16,24,32,.4);
+  border-bottom: 2px solid rgba(32,48,64,.4);
   margin-bottom: 20px;
 }
 .logo-container,
@@ -134,6 +134,7 @@ body > header .title-link:after{
   width: 7px;
   background: no-repeat url('../img/bracket-right-small.png');
 }
+
 /*.sequence {
   margin-top: 55px;
   border: 1px solid #ccc;
@@ -180,12 +181,16 @@ body > header .title-link:after{
   margin-bottom: 8px;
   display: inline-block;
   background-color: #333;
-  background-color: rgba(64,96,128,.6);
+  background-color: rgba(80,96,112,.8);
   padding: 6px 10px;
   font-size: 20px;
   line-height: 24px;
   color: #fff;
   opacity: 0.6;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .seq-indicator {
@@ -194,6 +199,10 @@ body > header .title-link:after{
   height: 240px;
   width: 40px;
   opacity: 0.6;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background: top left no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOFJREFUeNrU2dENgzAMBNCoE3SUbsxIHSlFiKpqSoLtnOmdpfzwkycQxjlKAVatdVnXc133wlY77l1cyAbHhWxwCxWyxe3XOO7kEa4DvB7Zww2A1yFHuBNgPvIMZwDmIS04IxCPtOIcQBzSg3MC55FeXAAYR0ZwQaAfGcVNAO3IGdwkcEOm4gDA/r4IHAj4uz8KBwR+HEgcGLh5boW7HsyP+LvtkL0kxz2RpM2MG/a/G3X61yQdJzEsSIxbEgOrxMgvcWiSOHZKHNwlog+J8EgifpMIMCUiYIkQPfM3xEuAAQCNF7zVwR83CAAAAABJRU5ErkJggg==');
 }
 .seq-indicator:after {
@@ -206,15 +215,27 @@ body > header .title-link:after{
   width: 2px;
   height: 200px;
   background-color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.seq-group.active .seq-grouptitle,
+.seq-group.active .seq-grouptitle {
+  opacity: 0.8;
+}
+.seq-group.active .seq-grouptitle:hover,
 .seq-group.active .seq-indicator{
   opacity: 0.95;
 }
 
+.seq-group.active .seq-indicator:after {
+  height: 320px;
+}
+
 .seq-group-list {
-  margin: 50px 0 8px 10px;
+  position: relative;
+  margin: 20px 0 8px 10px;
 }
 
 .seq-group-list > li {
@@ -231,22 +252,15 @@ body > header .title-link:after{
   transition: all 0.2s ease;
 }
 
-.sequence:hover > .seq-node{
+.sequence > ul {
+  margin: 0;
+  float: left;
+}
+
+.sequence:hover .seq-node{
   background: #506070;
 }
 
-.seq-node {
-  display: block;
-  margin: 0;
-  margin-right: 6px;
-  width: 24px;
-  height: 20px;
-  background: #4a585f;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
 .sequence.active,
 .sequence.zoomed {
   margin-left: 20px;
@@ -254,11 +268,12 @@ body > header .title-link:after{
 }
 
 .sequence.active:before, 
-.sequence.zoomed > .seq-node.active:before {
+.sequence.zoomed .seq-node.active:before {
   content: '';
   position: absolute;
-  margin-left: -5px;
-  bottom: 110%;
+  left: -5px;
+  margin-bottom: 6px;
+  bottom: 100%;
   height: 640px;
   width: 50px;
   opacity: 0.5;
@@ -267,11 +282,12 @@ body > header .title-link:after{
 }
 
 .sequence.active:after,
-.sequence.zoomed > .seq-node.active:after {
+.sequence.zoomed .seq-node.active:after {
   content: '';
   position: absolute;
-  margin-left: -5px;
-  top: 110%;
+  left: -5px;
+  margin-top: 6px;
+  top: 100%;
   height: 640px;
   width: 50px;
   opacity: 0.5;
@@ -289,4 +305,129 @@ body > header .title-link:after{
 .sequence.zoomed .seq-node.active {
   height: 40px;
   background: #a1b5bb;
+}
+
+.sequence .sequence-caption {
+  float: left;
+  display: none;
+  margin-left: 14px;
+  margin-top: -80px;
+  max-width: 420px;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.sequence-caption .sequence-title {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  padding: 0 12px;
+  margin-bottom: 4px;
+  background-color: #333;
+  background-color: rgba(112,128,144,.9);
+}
+.sequence-caption .sequence-desc {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0 12px;
+  margin-bottom: 4px;
+  background-color: #333;
+  background-color: rgba(112,128,144,.9);
+}
+.sequence-caption .label {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sequence.active .sequence-caption,
+.sequence.zoomed .sequence-caption {
+  display: inline-block;
+}
+.sequence.zoomed .sequence-caption {
+  opacity: .1;
+}
+
+.seq-node {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-right: 6px;
+  width: 24px;
+  height: 20px;
+  background: #4a585f;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.seq-node.active:first-child {
+  margin-top: 0px;
+}
+
+.seq-node.active {
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+
+.seq-node .seq-node-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -100px;
+  margin-left: 50px;
+  padding: 20px;
+  width: 600px;
+  color: #fff;
+  z-index: 30;
+}
+.seq-node .seq-node-content > header {
+  position: relative;
+}
+.seq-node .seq-node-content > header:before {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.seq-node.active .seq-node-content {
+  display: block;
+}
+
+.seq-node .seq-node-content .sequence-title {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 12px;
+  margin-bottom: 4px;
+  background-color: #333;
+  background-color: rgba(112,128,144,.9);
+}
+
+.seq-node .seq-node-content .node-title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 0 12px;
+  margin-bottom: 4px;
+  background-color: #333;
+  background-color: rgba(112,128,144,.9);
+}
+
+.seq-node .seq-node-content article {
+  padding: 4px 12px;
+  background:  rgba(64,80,96,.7);
 }
