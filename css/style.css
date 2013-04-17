@@ -42,30 +42,62 @@ body:after{
   background: center top url('../img/firstcivilpattern-overlay.png');
   opacity: 0.05;
 }
+
 a{
-  color: #555;
+  color: #cde;
 }
+
 img.pull-left {
   margin-right: 12px;
 }
+
 img.pull-right {
   margin-left: 12px;
 }
+
 a:hover,
 a:focus {
-  color: #222;
+  color: #def;
   text-decoration: underline;
 }
+
+.btn {
+  color: #eee;
+  border-color: transparent;
+  background: #456;
+  text-shadow: 0 1px 1px rgba(32, 48, 64, 0.5);
+  font-size: 16px;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #567;
+}
+
+.btn.btn-primary {
+  background: #345373;
+}
+
+.btn.btn-primary:hover {
+  background: #23588c
+}
+
 body > header{
   background: rgba(16,24,32,.4);
   border-bottom: 2px solid rgba(32,48,64,.4);
   margin-bottom: 20px;
 }
+
 .logo-container,
 body > header,
 .title-logo{
   text-align: center;
 }
+
 .title-logo{
   display: inline-block;
   width: 240px;
@@ -284,7 +316,7 @@ body > header .title-link:after{
   display: none;
   margin-left: 14px;
   margin-top: -80px;
-  max-width: 420px;
+  max-width: 600px;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -419,5 +451,16 @@ body > header .title-link:after{
 
 .seq-node .seq-node-content article {
   padding: 4px 12px;
-  background:  rgba(64,80,96,.7);
+  background:  rgba(64,80,96,.8);
+  margin-bottom: 4px;
+  border-top: 1px solid rgba(182,212,242, .75);
+  border-bottom: 1px solid rgba(182,212,242, .75);
+}
+
+.seq-node .seq-node-content article > p:last-child {
+  margin-bottom: 2px;
+}
+
+.seq-node .seq-node-content .label {
+  background-color: #708090;
 }

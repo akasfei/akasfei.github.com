@@ -34,6 +34,8 @@ $(document).ready(function (e){
     $seq.removeClass('active');
     $seq.addClass('zoomed');
     if ( $this.hasClass('active') ) {
+      if (! $(e.target).hasClass('seq-node'))
+        return;
       $seq.removeClass('zoomed');
       $seq.addClass('active');
       return $this.removeClass('active');
