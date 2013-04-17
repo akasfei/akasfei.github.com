@@ -70,7 +70,9 @@ $(document).ready(function (e){
     if ($this.hasClass('seq-node')) {
       switch (e.which){
         case 8:
-          $target = $this.parents('.sequence');
+        case 13:
+        case 32:
+          $target = $this;
           break;
         case 37:
           $target = $this.parents('.sequence').prev('.sequence');

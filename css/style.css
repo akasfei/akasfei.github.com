@@ -24,12 +24,12 @@ body {
   height: 100%;
   font-family: "source", Helvetica, sans-serif;
   background: #303840; /* Old browsers */
-  background: -moz-linear-gradient(90deg,  #303840 0%, #0a1d26 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left, right, color-stop(0%,#303840), color-stop(100%,#0a1d26)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(90deg,  #303840 0%,#0a1d26 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(90deg,  #303840 0%,#0a1d26 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(90deg,  #303840 0%,#0a1d26 100%); /* IE10+ */
-  background: linear-gradient(90deg,  #303840 0%,#0a1d26 100%); /* W3C */
+  background: -moz-linear-gradient(135deg,  #303840 0%, #0a1d26 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear,top left,bottom right, color-stop(0%,#303840), color-stop(100%,#0a1d26)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(135deg,  #303840 0%,#0a1d26 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(135deg,  #303840 0%,#0a1d26 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(135deg,  #303840 0%,#0a1d26 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #303840 0%,#0a1d26 100%); /* W3C */
 }
 body:after{
   content: '';
@@ -158,20 +158,21 @@ body > header .title-link:after{
 
 .seq-group .seq-grouptitle{
   position: relative;
+  margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 8px;
   display: inline-block;
   background-color: #333;
   background-color: rgba(80,96,112,.8);
   padding: 6px 10px;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #fff;
   opacity: 0.4;
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+  -webkit-transition: opacity,font-size 0.2s ease;
+  -moz-transition: opacity,font-size 0.2s ease;
+  -o-transition: opacity,font-size 0.2s ease;
+  transition: opacity,font-size 0.2s ease;
 }
 
 .seq-indicator {
@@ -198,6 +199,7 @@ body > header .title-link:after{
 }
 
 .seq-group.active .seq-grouptitle {
+  font-size: 22px;
   opacity: 0.9;
 }
 .seq-group.active .seq-grouptitle:hover,
@@ -254,11 +256,11 @@ body > header .title-link:after{
   content: '';
   position: absolute;
   left: -5px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   bottom: 100%;
-  height: 640px;
+  height: 320px;
   width: 50px;
-  opacity: 0.5;
+  opacity: 0.75;
   z-index: -10;
   background: no-repeat url('../img/syncbracket-top-small.png');
 }
@@ -268,11 +270,11 @@ body > header .title-link:after{
   content: '';
   position: absolute;
   left: -5px;
-  margin-top: 6px;
+  margin-top: 4px;
   top: 100%;
-  height: 640px;
+  height: 320px;
   width: 50px;
-  opacity: 0.5;
+  opacity: 0.75;
   z-index: -10;
   background: no-repeat url('../img/syncbracket-bottom-small.png');
 }
@@ -329,9 +331,9 @@ body > header .title-link:after{
   position: relative;
   margin: 0;
   margin-right: 6px;
-  width: 24px;
+  width: 20px;
   height: 20px;
-  background: #4a585f;
+  background: #434e59;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -357,7 +359,7 @@ body > header .title-link:after{
 .sequence.zoomed .seq-node {
   width: 40px;
   margin-bottom: 4px;
-  background: #506070;
+  background: #678;
 }
 
 .sequence.zoomed .seq-node.active {
