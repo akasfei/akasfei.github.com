@@ -25,7 +25,7 @@ $(document).ready(function (e){
     var $this = $(this);
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
-    var index = $seq.index('.sequence') + 1;
+    var index = $seq.index('.sequence');
     var offset = marginLeft - index*18;
     $('.container').removeClass('default');
     $('.container').css('margin-left', offset + 'px');

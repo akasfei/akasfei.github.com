@@ -5,14 +5,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "source-lt";
-  src: url("../font/SourceSansPro/SourceSansPro-Light.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "source-sb";
-  src: url("../font/SourceSansPro/SourceSansPro-Semibold.otf");
+  font-family: "source-code";
+  src: url("../font/SourceSansPro/SourceCodePro-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -426,16 +420,29 @@ body > header .title-link:after{
   position: relative;
 }
 .seq-node .seq-node-content > header:before {
+  content: '';
   position: absolute;
   display: block;
   right: 0px;
   top: 0px;
-  height: 20px;
-  width: 20px;
-  background: #fff;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
+  height: 16px;
+  width: 16px;
+  border-top: 2px solid rgba(182,212,242, .75);
+  border-right: 2px solid rgba(182,212,242, .75);
 }
+.seq-node .seq-node-content > header:after {
+  content: 'SSYS > ISN';
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  line-height: 10px;
+  right: 4px;
+  bottom: 4px;
+  color: rgba(182,212,242, .95);
+  text-shadow: 0 1px 1px rgba(182,212,242, .75);
+  opacity: 0.5;
+}
+
 .seq-node.active .seq-node-content {
   display: block;
 }
