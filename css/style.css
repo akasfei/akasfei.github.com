@@ -92,6 +92,18 @@ body > header{
   margin-bottom: 20px;
 }
 
+.container {
+  width: 3200px;
+  -webkit-transition: margin-left 0.2s ease;
+  -moz-transition: margin-left 0.2s ease;
+  -o-transition: margin-left 0.2s ease;
+  transition: margin-left 0.2s ease;
+}
+
+.container.default {
+  margin-left: 200px !important;
+}
+
 .logo-container,
 body > header,
 .title-logo{

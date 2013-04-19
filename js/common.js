@@ -23,6 +23,8 @@ $(document).ready(function (e){
     var $this = $(this);
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
+    var index = $seq.index('.sequence');
+    //$('.container').css('margin-left', offset + 'px');
     if ( !($seq.hasClass('active') || $seq.hasClass('zoomed')) ) {
       $('.sequence, .seq-node.active').removeClass('active');
       $('.sequence').removeClass('zoomed');
