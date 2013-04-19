@@ -9,6 +9,8 @@ $(document).ready(function (e){
     $('.sequence-body[data-seq="' + $this.attr('data-seq') + '"]').addClass('active').fadeIn(600);
   })
   */
+  var marginLeft = parseInt($('.container').css('margin-left'));
+
   $('.switcher_').click(function (e){
     var $this = $(this);
     var tablink = $('.sequence > .nav > li > a[data-seq="' + $this.attr('data-seq') + '"]');
@@ -23,8 +25,10 @@ $(document).ready(function (e){
     var $this = $(this);
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
-    var index = $seq.index('.sequence');
-    //$('.container').css('margin-left', offset + 'px');
+    var index = $seq.index('.sequence') + 1;
+    var offset = marginLeft - index*18;
+    $('.container').removeClass('default');
+    $('.container').css('margin-left', offset + 'px');
     if ( !($seq.hasClass('active') || $seq.hasClass('zoomed')) ) {
       $('.sequence, .seq-node.active').removeClass('active');
       $('.sequence').removeClass('zoomed');
@@ -52,6 +56,7 @@ $(document).ready(function (e){
     if ( $this.hasClass('active') || $this.hasClass('zoomed') )
       return;
     $('.seq-group').removeClass('active').removeClass('zoomed');
+    $('.container').addClass('default');
     $this.addClass('active');
   });
 

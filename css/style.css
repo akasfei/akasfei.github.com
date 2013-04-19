@@ -476,3 +476,39 @@ body > header .title-link:after{
 .seq-node .seq-node-content .label {
   background-color: #708090;
 }
+
+@media (min-width: 1800px) {
+  .container.default {
+    margin-left: 360px !important;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1799px){
+  .container.default {
+    margin-left: 240px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container.default {
+    margin-left: 120px !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .container.default {
+    margin-left: 60px !important;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 999px) {
+  .container.default {
+    margin-left: 40px !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .container.default {
+    margin-left: 20px !important;
+  }
+}
