@@ -34,6 +34,8 @@ $(document).ready(function (e){
 
   /* a sequence or its nodes are clicked */
   $('.sequence').on('click', '.seq-node', function (e){
+    if (! $(e.target).hasClass('seq-node'))
+        return;
     var $this = $(this);
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
@@ -54,8 +56,6 @@ $(document).ready(function (e){
     $seq.removeClass('active');
     $seq.addClass('zoomed');
     if ( $this.hasClass('active') ) {
-      if (! $(e.target).hasClass('seq-node'))
-        return;
       $seq.removeClass('zoomed');
       $seq.addClass('active');
       $('.key-hint-container > [class^="hint-"]').removeClass('active');
@@ -90,7 +90,7 @@ $(document).ready(function (e){
   $('.anchor-link').click(function (e) {
     e.preventDefault();
     var target = $(this).attr('href');
-    $(target).click();
+    $(target).trigger('click');
   });
 
   /* keyboard controls */

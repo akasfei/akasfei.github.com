@@ -435,6 +435,19 @@ body > header.active > .title-link {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 4px;
+}
+.sequence-caption .image {
+  position: relative;
+}
+.sequence-caption img {
+  position: absolute;
+  float: left;
+  display: inline-block;
+  max-width: 400px;
+  max-height: 300px;
+  z-index: 40;
+  border: 1px solid rgba(96, 112, 128, 0.75);
 }
 
 .sequence.active .sequence-caption,
@@ -493,8 +506,7 @@ body > header.active > .title-link {
   position: absolute;
   left: 100%;
   top: -100px;
-  margin-left: 50px;
-  padding: 20px;
+  margin-left: 80px;
   width: 600px;
   color: #fff;
   z-index: 30;
@@ -557,6 +569,7 @@ body > header.active > .title-link {
   padding: 4px 12px;
   background:  rgba(64,80,96,.8);
   margin-bottom: 4px;
+  min-height: 180px;
   border-top: 1px solid rgba(182,212,242, .75);
   border-bottom: 1px solid rgba(182,212,242, .75);
 }
