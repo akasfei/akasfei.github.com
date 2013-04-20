@@ -211,7 +211,8 @@ body > header .typography {
 }
 body > header .typography h1 {
   font-size: 60px;
-  line-height: 72px;
+  line-height: 60px;
+  margin: 0;
 }
 
 body > header .typography .btn {

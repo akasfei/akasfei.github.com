@@ -19,10 +19,18 @@ $(document).ready(function (e){
     tablink.tab('show');
   });
 
+  $('.title-logo').click(function (e) {
+    $('#trigger-firstgroup').click();
+    $('.img-container').addClass('active');
+  });
+
+  /* Deactivate the header */
+  $('.deactivate-header').click(function (e){
+    $('.img-container.active').removeClass('active');
+  });
   $('.container').click(function (e){
     $('.img-container.active').removeClass('active');
   });
-
 
   /* a sequence or its nodes are clicked */
   $('.sequence').on('click', '.seq-node', function (e){
