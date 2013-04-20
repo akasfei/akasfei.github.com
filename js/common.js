@@ -69,9 +69,9 @@ $(document).ready(function (e){
   }); 
 
   /* a sequence group is clicked */
-  $('.seq-group').on('click', '.seq-group, *:not(.seq-node-content, .seq-node-content > *)',function (e){
-    var $this = $(this).parents('.seq-group');
-    if ( $this.hasClass('active') || $this.hasClass('zoomed') || (e.target.hacClass && e.target.hasClass('anchor-link')) )
+  $('.seq-group').on('click',function (e){
+    var $this = $(this);
+    if ( $this.hasClass('active') || $this.hasClass('zoomed') || $(e.target).hasClass('anchor-link') )
       return;
     $('.seq-group').removeClass('active').removeClass('zoomed');
     $('.container').addClass('default');
