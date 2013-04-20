@@ -5,6 +5,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "source-l";
+  src: url("../font/SourceSansPro/SourceSansPro-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "source-code";
   src: url("../font/SourceSansPro/SourceCodePro-Regular.otf");
   font-weight: normal;
@@ -140,11 +146,12 @@ body > header .title-link{
   display: inline-block;
   font-size: 30px;
   line-height: 36px;
-  width: 200px;
+  min-width: 200px;
+  text-align: center;
   vertical-align: bottom;
   margin-bottom: 30px;
   color: #ccc;
-  color: rgba(255,255,255,.80);
+  color: rgba(255,255,255,.7);
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
@@ -162,6 +169,10 @@ body > header .title-link:before{
   height: 25px;
   width: 7px;
   background: no-repeat url('../img/bracket-left-small.png');
+  -webkit-transition: margin-right 0.2s ease;
+  -moz-transition: margin-right 0.2s ease;
+  -o-transition: margin-right 0.2s ease;
+  transition: margin-right 0.2s ease;
 }
 body > header .title-link:after{
   content: '';
@@ -171,6 +182,16 @@ body > header .title-link:after{
   height: 25px;
   width: 7px;
   background: no-repeat url('../img/bracket-right-small.png');
+  -webkit-transition: margin-left 0.2s ease;
+  -moz-transition: margin-left 0.2s ease;
+  -o-transition: margin-left 0.2s ease;
+  transition: margin-left 0.2s ease;
+}
+body > header .title-link:hover:before{
+  margin-right: 16px;
+}
+body > header .title-link:hover:after{
+  margin-left: 16px;
 }
 
 .seq-group {
@@ -416,7 +437,9 @@ body > header .title-link:after{
   color: #fff;
   z-index: 30;
 }
-.seq-node .seq-node-content > header {
+.seq-node .seq-node-content > header,
+.seq-node .seq-node-content > footer {
+  background: rgba(0,0,0,0.15);
   position: relative;
 }
 .seq-node .seq-node-content > header:before {
@@ -432,6 +455,7 @@ body > header .title-link:after{
 }
 .seq-node .seq-node-content > header:after {
   content: 'SSYS > ISN';
+  font-family: "source-l";
   position: absolute;
   display: block;
   font-size: 12px;
@@ -440,7 +464,6 @@ body > header .title-link:after{
   bottom: 4px;
   color: rgba(182,212,242, .95);
   text-shadow: 0 1px 1px rgba(182,212,242, .75);
-  opacity: 0.5;
 }
 
 .seq-node.active .seq-node-content {

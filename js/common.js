@@ -26,7 +26,7 @@ $(document).ready(function (e){
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
     var index = $seq.index('.sequence');
-    var offset = marginLeft - index*18;
+    var offset = marginLeft - index*24;
     $('.container').removeClass('default');
     $('.container').css('margin-left', offset + 'px');
     if ( !($seq.hasClass('active') || $seq.hasClass('zoomed')) ) {
