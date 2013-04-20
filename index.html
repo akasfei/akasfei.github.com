@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>StarAtlas - SFEI Systems IAN</title>
+<title>SFEI Systems ISN</title>
 <link rel='stylesheet' href='css/bootstrap.css' />
 <link rel='stylesheet' href='css/font-awesome.css' />
 <link rel='stylesheet' href='css/style.css' />
+<link rel='icon' href='img/favicon.png' />
 <!--[if lte IE 8]>
 <style>
 .globe-animation{
@@ -16,161 +17,667 @@
 </head>
 
 <body>
-<div class="container img-container">
-  <a href="#" class="title-logo switcher_" data-seq="0"><img src="img/sfei_logo_metric.svg" alt="SFEI Logo" class="pull-left"></a>
-</div>
-<div class="container">
-  <div class="row-fluid">
-    <div class="sequence span2">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#ian" class="switcher" data-toggle="tab" data-seq="0">IAN</a></li>
-        <li><a href="#north-star" class="switcher" data-toggle="tab" data-seq="1">NORTH-STAR</a></li>
-        <li><a href="#springfield" class="switcher" data-toggle="tab" data-seq="2">SPRINGFIELD</a></li>
-        <li><a href="#assetbase" class="switcher" data-toggle="tab" data-seq="3">ASSETBASE</a></li>
-        <li><a href="#awwh" class="switcher" data-toggle="tab" data-seq="4">AWWH</a></li>
-        <li><a href="#farewellnsfls" class="switcher" data-toggle="tab" data-seq="5">FAREWELL NSFLS</a></li>
-        <li><a href="#sfashion" class="switcher" data-toggle="tab" data-seq="6">SFASHION</a></li>
+<header class="img-container active">
+  <a href="#trigger-firstgroup" class="title-link anchor-link">INTRO</a>
+  <a href="#trigger-projects" class="title-link anchor-link">PROJECTS</a>
+  <a href="#" class="title-logo switcher_"><img src="img/pyramid-circle-03.svg" alt="Pyramid"></a>
+  <a href="#trigger-about" class="title-link anchor-link">ABOUT</a>
+  <a href="#trigger-contact" class="title-link anchor-link">CONTACT</a>
+  <div class="typography">
+    <h1>WELCOME TO ISN.</h1>
+    <p>&lt;SFEI SYSTEMS IMAGING SEQUENTIAL NETWORK/&gt;</p>
+    <div><a href="#trigger-intro" class="btn btn-primary anchor-link"> TAKE A TOUR </a> <a href="#" class="btn deactivate-header"> VIEW SEQUENCES </a></div>
+  </div>
+</header>
+<div class="container default">
+  <div class="seq-group">
+    <div class="seq-indicator pull-left"></div>
+    <div class="seq-group-body">
+      <header id="trigger-firstgroup" class="seq-grouptitle">INTRODUCTION</header>
+      <ul class="seq-group-list">
+        <li class="sequence">
+          <ul>
+            <li id="trigger-intro" class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">INTRODUCTORY SEQUENCE</div><br>
+                  <div class="node-title">What is SFEI Systems ISN?</div>
+                </header>
+                <article>
+                  <p>I-S-N stands for Imaging Sequential Network. It is associated with SFEI Systems, which is named after its author, SFEI. It is a website which stores SFEI's hightlighted projects as well as a brief introduction of himself.</p>
+                  <p>ISN features a sequantial layout, including sequence groups, sequences, and sequence nodes. Sequences with different catagories are arranged in different sequence groups and each sequence represents a specific topic. A sequence consists of several nodes, which represents articles explaining the corresponding topic.</p>
+                  <p>You can use arrow keys, enter and backspace to navigate through the nodes and sequences.</p>
+                </article>
+                <footer><a href="#" class="btn btn-primary">CONTINUE</a> <a href="#" class="btn">ABOUT SFEI</a></footer>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">INTRODUCTORY SEQUENCE</div><br>
+                  <div class="node-title">What can I find in this website?</div>
+                </header>
+                <article>
+                  <p>The main contents of this website are SFEI's highlighted projects. You will be able to find them by clicking the <span class="label">PROJECTS</span> link in the navigation bar. You can also navigate to the Projects sequence group by either mouse or keyboard.</p>
+                  <p>You will also be able to find a brief about SFEI, as well as SFEI's contact information. They are located in the <span class="label">ABOUT</span> and <span class="label">CONTACT</span> group.</p>
+                </article>
+                <footer><a href="#" class="btn btn-primary">SEE WHAT'S FEATURED</a></footer>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">WELCOME</div>
+            <div class="sequence-desc">LEARN MORE ABOUT THIS WEBSITE</div>
+            <span class="label">INFORMATION</span>
+            <div class="image"><img src="assets/intro.jpg" alt="INTRODUCTION"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">OPERATING REFERENCE</div><br>
+                  <div class="node-title">KEYBOARD SHORTCUTS</div>
+                </header>
+                <article>
+                  <p>You can use arrow keys, enter and backspace to navigate through the nodes and sequences. Specific key navigations are:</p>
+                  <p>When a sequence node is active, use <i class="icon-arrow-up"></i> and <i class="icon-arrow-down"></i> keys to navigate through other nodes. Use <i class="icon-arrow-left"></i> and <i class="icon-arrow-right"></i> keys to move to the next or previous sequence. Use <span class="label">ENTER</span> to active the default button (the blue one), and <span class="label">BACKSPACE</span> to move up to the parent sequence.</p>
+                  <p>When a sequence is active, use <i class="icon-arrow-left"></i> and <i class="icon-arrow-right"></i> keys to navigate through other sequences. Use <i class="icon-arrow-up"></i> and <i class="icon-arrow-down"></i> keys to activate the last or first node in this sequence. Use <span class="label">ENTER</span> to active the first node, and <span class="label">BACKSPACE</span> to move up to the parent sequence group.</p>
+                  <p>When a sequence group is active, use <i class="icon-arrow-left"></i> and <i class="icon-arrow-right"></i> keys to navigate through other groups. Use <span class="label">ENTER</span> to active the first sequence in this group.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">HELP</div>
+            <div class="sequence-desc">SYSTEM OPERATING REFERENCE</div>
+            <span class="label">INFORMATION</span>
+            <div class="image"><img src="assets/help.jpg" alt="HELP"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SYSTEM INFORMATION</div><br>
+                  <div class="node-title">STATS</div>
+                </header>
+                <article>
+                  <p>SFEI SYSTEMS IMAGING SEQUENTIAL NETWORK IS OPERATING CORRECTLY.</p>
+                  <p>AUTO-FETCH SCRIPT DISABLED. REASON: SFEI SYSTEMS IDN API OFFLINE.</p>
+                  <p>THIS IS A STATIC INFORMATION.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SYSTEM INFORMATION</div><br>
+                  <div class="node-title">SYSTEM VERSION</div>
+                </header>
+                <article>
+                  <p>SFEI SYSTEMS IMAGING SEQUENTIAL NETWORK V1.0.0B</p>
+                  <p>BUILT BY SFEI HIMSELF, 2240HRS, APR 17, 2013, @SFEI-DWS<p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">SYSTEM INFO</div>
+            <div class="sequence-desc">ABOUT SFEI SYSTEMS ISN</div>
+            <span class="label">INFORMATION</span>
+            <div class="image"><img src="assets/sysinfo.jpg" alt="SYSTEM INFORMATION"></div>
+          </div>
+        </li>
       </ul>
     </div>
-    <!-- END SEQUENCE -->
-    <div class="span10 tab-content">
-
-      <div class="sequence-body tab-pane fade active in" id="ian">
-        <div>
-          <span class="seq-title">
-            <h1>SFEI Systems</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>IMAGING ARCHIVE NETWORK</h3>
-          </span>
-          <span class="label">INTRODUCTION</span>
-        </div>
-        <img src="assets/wallpaper-2684199.jpg" alt="Sequence image">
-        <p class="seq-desc">Codenamed "Star Atlas", the Imaging Archive Network is a series of static pages that includes the featured works of SFEI. It is deployed using Github's Page service. </p>
-        <div><a href="#" class="btn switcher_" data-seq="1"><i class="icon icon-lightbulb"></i> SEE WHAT'S FEATURED </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="north-star">
-        <div>
-          <span class="seq-title">
-            <h1>NORTH STAR</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>AN ONLINE BLOG WEBSITE BUILT WITH NODE.JS</h3>
-          </span>
-          <span class="label">DESIGN</span>
-          <span class="label">DEVELOP</span>
-        </div>
-        <img src="assets/north-star.jpg" alt="Sequence image">
-        <p class="seq-desc">The SFEI Systems v3 (codenamed North Star) is designed to be the host for my blogs, thoughts, references, etc. It features a sleek interface and a twitter-like user relationship.</p>
-        <div>
-          <a href="https://github.com/akasfei/North-Star" class="btn"><i class="icon icon-github"></i> VIEW ON GITHUB </a> 
-          <a href="http://northstar.cloudfoundry.com" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="springfield">
-        <div>
-          <span class="seq-title">
-            <h1>SPRINGFIELD</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>"SPRING FESTIVAL SOIREE DISCOVERY"</h3>
-          </span>
-          <span class="label">DESIGN</span>
-          <span class="label">DEVELOP</span>
-        </div>
-        <img src="assets/springfield.jpg" alt="Sequence image">
-        <p class="seq-desc">Codename Springfield refers to the "Spring Festival Soiree Discovery" topic of Hust Focus.com. This project features a journey-like experience that will entertain as well as educate visitors about China's Spring Festival Soiree, aka "Chun wan".</p>
-        <div>
-          <a href="http://focus.hustonline.net/zhuanti/Springfield" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="assetbase">
-        <div>
-          <span class="seq-title">
-            <h1>ASSETBASE</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>A HOST FOR JS LIBARIES</h3>
-          </span>
-          <span class="label">DEVELOP</span>
-        </div>
-        <img src="assets/assetbase.jpg" alt="Sequence image">
-        <p class="seq-desc">The assetbase is created to be a host for several js libries including jQuery, bootstrap, and backbone.js.</p>
-        <div>
-          <a href="https://github.com/akasfei/assetbase" class="btn"><i class="icon icon-github"></i> VIEW ON GITHUB </a> 
-          <a href="https://assetbase-sfei.rhcloud.com/" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="awwh">
-        <div>
-          <span class="seq-title">
-            <h1>A WORLD WITHOUT HOLIDAYS</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>THE TRILOGY: HARMORIZATION, PASSING, AND DISTANT LANDS.</h3>
-          </span>
-          <span class="label">DESIGN</span>
-          <span class="label">MULTIMEDIA</span>
-        </div>
-        <img src="assets/awwh3yrs.jpg" alt="Sequence image">
-        <p class="seq-desc">The A World without Holidays trilogy is about a group of students (the NOVICE) that struggle to fight the evil faction (the MENTORS), who intend to cancel all holidays. The first part was shot in 2009, while the second and third part are rendered using World of Warcraft graphics engine in 2011 and 2012. Due to some complicated reasons, only the third part is released.</p>
-        <div>
-          <a href="http://v.youku.com/v_show/id_XMzU1MDI1MDQ0.html" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="farewellnsfls">
-        <div>
-          <span class="seq-title">
-            <h1>FAREWELL NSFLS</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>MY SENIOR HIGH GRADUATION</h3>
-          </span>
-          <span class="label">MULTIMEDIA</span>
-        </div>
-        <img src="assets/fnsfls.jpg" alt="Sequence image">
-        <p class="seq-desc">"FAREWELL NSFLS" is my high school graduation-memorial video which was made in June 2011 and displayed on our graduation ceremony. This video reminds of the viewers of the vicissitudes of the past senior high years and expects a bright future ahead of everyone.</p>
-        <div>
-        <a href="http://v.youku.com/v_show/id_XMjc5MDkwMDA4.html" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-      <div class="sequence-body tab-pane fade" id="sfashion">
-        <div>
-          <span class="seq-title">
-            <h1>SECRETS OF FASHION</h1>
-          </span>
-        </div>
-        <div>
-          <span class="seq-subtitle">
-            <h3>A FOCUS.COM PROJECT ABOUT FASHION</h3>
-          </span>
-          <span class="label">DESIGN</span>
-          <span class="label">DEVELOP</span>
-        </div>
-        <img src="assets/sfashion.jpg" alt="Sequence image">
-        <p class="seq-desc">"THE SECRETS OF FASHION" is a project of HUST FOCUS.COM which includes four topics: pop music, pop words, pop jokes, and the recent Nobel Prize winner Mo Yan.</p>
-        <div>
-        <a href="http://focus.hustonline.net/zhuanti/Secrets_of_Fashion/" class="btn"><i class="icon icon-beaker"></i> PROJECT IMPLEMENTATION </a></div>
-      </div>
-
-    </div>
-    <!-- END CONTENT -->
   </div>
-</div>
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+  <div class="seq-group">
+    <div class="seq-indicator pull-left"></div>
+    <div class="seq-group-body">
+      <header id="trigger-projects" class="seq-grouptitle">PROJECTS</header>
+      <ul class="seq-group-list">
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SFEI SYSTEMS v3</div><br>
+                  <div class="node-title">SUMMARY</div>
+                </header>
+                <article>
+                  <p>SFEI Systems v3, codenamed North Star, is an online blog website built with Node.js and Mongodb. It features a twitter-like follow/follower relationship, and SFEI's design concept of 'Imaging Database Network'. It is designed to be the host for SFEI's blogs, thoughts, references, etc.</p>
+                  <p><span class="label">NOTE</span> to enter the HUST JingJing website design contest, SFEI applied some minor modifications to this website, including rebranding the website to 'North Star' (the codename) and adding many archive entries associated with the contest. In version 3.3.2, the website will be rebranded to SFEI Systems.</p>
+                  <p>Currently SFEI Systems v3 is hosted on <a href="http://northstar.cloudfoundry.com">Cloudfoundry</a>. The source code is available on <a href="https://github.com/akasfei/North-Star">GitHub.</a></p>
+                </article>
+                <footer><a href="http://northstar.cloudfoundry.com" class="btn btn-primary">PROJECT IMPLEMENTATION</a> <a href="https://github.com/akasfei/North-Star" class="btn">VIEW ON GITHUB</a>
+                </footer>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SFEI SYSTEMS v3</div><br>
+                  <div class="node-title">FEATURES</div>
+                </header>
+                <article>
+                  <ul>
+                    <li>Twitter-like user relationship (follow/follower)</li>
+                    <li>Sleek and simple page design</li>
+                    <li>Clearance controling</li>
+                    <li>HTML/Markdown dual editor</li>
+                  </ul>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SFEI SYSTEMS v3</div><br>
+                  <div class="node-title">SPECIFICATIONS</div>
+                </header>
+                <article>
+                  <p><span class="label">CURRENT VERSION</span> 3.3.1deb / 3.3.2ns (master/3.3.2SFEISYS)</p>
+                  <p><span class="label">LANGUAGE</span> JavaScript</p>
+                  <p><span class="label">RUNTIME</span> Node.js 0.8.x (0.10.x build passed)</p>
+                  <p><span class="label">DATABASE</span> MongoDb</p>
+                  <p><span class="label">BUILD STATUS</span> <a href="http://travis-ci.org/akasfei/North-Star"><img src="https://secure.travis-ci.org/akasfei/North-Star.png" alt="Build Status" style="max-width:100%;"></a></p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SFEI SYSTEMS v3</div><br>
+                  <div class="node-title">PURPOSE AND INTENTIONS</div>
+                </header>
+                <article>
+                  <p>Inpsired by the intro movies of Call of Duty Modern Warfare series, an idea of building a private blog website with the name of 'Imaging Database Network' came to mind. I decided to call it 'SFEI Systems', which is also the name of a website I've created before. The project 'SFEI Systems Mk III Imaging Dataabase Network' later became the prototype of the award-winning North Star.</p>
+                  <p><span class="label">NOTE</span>The codename of SFEI Systems is 'North Star', but North Star is also the name of a branch of this website. North Star is codenamed 'Deep Earth' and won first place of the HUST JingJing website design contest that took place in Oct 2012 to Jan 2013.</p>
+                  <p>SFEI Systems is my first website available to general audience of the Internet. This website will mainly consist of my blogs, thoughts, references, etc. Also recently I've been thinking to convert it into an API server, thus I can access the website's data from multiple applications and platforms.</p>
+                </article>
+              </div>
+            </li>
+            
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SFEI SYSTEMS v3</div><br>
+                  <div class="node-title">FUTURE ASPECTS</div>
+                </header>
+                <article>
+                  <p>SFEI will keep maintaining this website for a considerable amount of time.</p>
+                  <p>In version 3.3.2:</p>
+                  <ul>
+                    <li>the webiste will be rebranded to its orginal form, SFEI Systems;</li>
+                    <li>some small bugs will be fixed;</li>
+                    <li>admins will be able to remove unused tags.</li>
+                  </ul>
+                  <p>In future versions, 3.4.x or 3.5.x, the website will include an API, which will enable viewing, editing, commenting articles using AJAX. For example, ISN will be able to use a js plugin to fetch new projects from SFEI Systems.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">SFEI SYSTEMS V3</div>
+            <div class="sequence-desc">A BLOG WEBSITE CODENAMED NORTH STAR</div>
+            <span class="label">DESIGN</span> <span class="label">DEVELOP</span>
+            <div class="image"><img src="assets/north-star.jpg" alt="SFEI SYSTEMS V3"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SPRINGFIELD</div><br>
+                  <div class="node-title">SUMMARY</div>
+                </header>
+                <article>
+                  <p>Codename Springfield refers to the "Spring Festival Soiree Discovery" topic of Hust <a href="http://focus.hustonline.net">Focus.com.</a>. This project features a journey-like experience that will entertain as well as educate visitors about China's Spring Festival Soiree, aka "Chun wan". This project is designed and developed by me, but all credits should go to the rest of our team who created the website's content.</p>
+                  <p>The journey consists of seven parts: introduction, the jury of performance, the fantastic effects, the pointer of fashion, the manufacturer of stars, the display of culture, and the epilogue. Each part, other than the first and the last part, consists of several articles of a specific topic.</p>
+                  <p>This project was officially released on Mar 30, 2013.</p>
+                </article>
+                <footer>
+                  <a href="#sfashion-more" class="btn btn-primary anchor-link">LEARN MORE</a> <a href="http://focus.hustonline.net/zhuanti/Springfield/" class="btn">PROJECT IMPLEMENTATION</a>
+                </footer>
+              </div>
+            </li>
+            <li id="sfashion-more" class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SPRINGFIELD</div><br>
+                  <div class="node-title">DESIGN NOTES</div>
+                </header>
+                <article>
+                  <p>As this project is mainly associated to China's Spring Festival, during which red decorations are very common, the main tone of this website is set to red. Also, there is a red square around the edge of the page, and some decorations at each corner. These decorations are intended to imitate a traditional Chinese window design.</p>
+                  <p>When users click the buttons or links, the next page will slide horizontally into the screen, giving users the impression that they on a journey. An image and some description are shown for each part, and if users intend to know more about the topic, they can click the "Learn more" link, which will show an iframe containing the articles of that topic.</p>
+                  <p>The main carousel hides to show the iframe, and a navigation bar is provided to navigate among the iframe pages. In each iframe page, there is a navigation pane at the left. This pane contains titles of all articles on this page.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SPRINGFIELD</div>
+                  <br>
+                  <div class="node-title">STATUS</div>
+                </header>
+                <article>
+                  <p>This project is secure and stable. However users of old browsers will not have the complete experience. ( To hell with IE 6/7/8 :) )</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">PROJECT SPRINGFIELD</div>
+            <div class="sequence-desc">"SPRING FESTIVAL SOIREE DISCOVERY"</div>
+            <span class="label">DESIGN</span> <span class="label">DEVELOP</span>
+            <div class="image"><img src="assets/springfield.jpg" alt="SPRINGFIELD"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ASSETBASE</div><br>
+                  <div class="node-title">SUMMARY</div>
+                </header>
+                <article>
+                  <p>The assetbase is created to be a host for several js libries including jQuery, bootstrap, and backbone.js.</p>
+                  <p>This website provides three popular JavaScript libaries. It is designed because I cannot tolerate the latency of ajax.google.com in mainland China (the reason is quite clear). This website supports both http and https.</p>
+                  <p>Generally speaking, when users request a file without other requests (for example /jQuery/), the server reads its cache and send the file back. It is also possible to request a file of specific version, and whether it should be compressed.</p>
+                </article>
+                <footer>
+                  <a href="https://assetbase-sfei.rhcloud.com/" class="btn btn-primary">PROJECT IMPLEMENTATION</a> <a href="https://github.com/akasfei/assetbase" class="btn">VIEW ON GITHUB</a>
+                </footer>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ASSETBASE</div><br>
+                  <div class="node-title">REASONS OF DEPRECATION</div>
+                </header>
+                <article>
+                  <p>Due to my lack of time to maintain this website and the fact that *.rhcloud.com is no longer reachable via http, the website can only provide relevantly old js libaries (last updated around Jan 2013). However, this website can still be reached in mainland China via https, I'm still keeping this site online for future purposes.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">ASSETBASE</div>
+            <div class="sequence-desc">A HOST FOR JS LIBARIES</div>
+            <span class="label">DEVELOP</span>
+            <div class="image"><img src="assets/assetbase.jpg" alt="ASSETBASE"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holidays</div><br>
+                  <div class="node-title">SUMMARY</div>
+                </header>
+                <article>
+                  <p>The A World without Holidays trilogy is about a persistant struggle of a group of students (the NOVICE) against the evil faction (the MENTORS), who intend to use their power and influence to cancel all holidays and achieve their evil goal of nation-wide domination. The story focuses on two of the students, who discovered, investigated and finally sabotaged the MENTORS' plot.</p>
+                  <p>The first part of the trilogy was shot in 2009, while the second and third part are rendered using World of Warcraft graphics engine in 2011 and 2012. Due to some complicated reasons, only the third part is publicly released.</p>
+                </article>
+                <footer><a href="#awwh-more" class="btn btn-primary">LEARN MORE</a></footer>
+              </div>
+            </li>
+            <li id="awwh-more" class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holidays</div><br>
+                  <div class="node-title">STORY</div>
+                </header>
+                <article>
+                  <p>The story of A World without Holidays is based the irony on China's current high school education system, in which students have a sole goal to fight for: the Colledge Entrance Examination. In order to achieve better score, students are usually required to study longer and take more classes. The story of the trilogy starts with a direct conflict between the two faction, both are trying to obtain an artifact to achieve their own goals. The conflict, however, led to the disappearance of the artifact. The two factions had no choice but to negotiate peace.</p>
+                  <p>Five years later, a third faction named Al'Asad Education appeared and posed great threat to both faction. So the school selected some students and formed Task Force 320, who later discovered that the school wished only to benefit from the conflict. TF320 stopped cooperating with the school, and as a consequence, they were ambushed, captured and later executed. However, a member of TF320 was rescued by a stranger and survived.</p>
+                  <p>Finally, with the help of some students, two heroes are able to sabotage the organization of the MENTORS. They took down the MENTORS' defences piece by piece, and they finally succeeded in putting the leader of the MENTORS out of rule.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holidays</div><br>
+                  <div class="node-title">EPISODE 1: HARMORIZATION</div>
+                </header>
+                <article>
+                  <p>In this episode, both the NOVICE and the MENTORS are looking for an artifact named "Weizi Stanp", and both sent their best man to capture the artifact. Our hero, Dongqi Wang, was sent by the NOVICE.</p>
+                  <p>In order to enter the city where the artifact is guarded, Wang had to enter the Star of Despair Contest of English. After winning the first few contests, he was invited to the finals. Before the final, he managed to locate, secure and extract the artifact. However, on his way back, he encountered a group of city managers and was captured and sent to Grandpa Zhai's Removal Center of Escaping Class Addiction.</p>
+                  <p>The artifact, however, disappeared. So the MENTORS and the NOVICE had to negociate peace.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holdiays</div><br>
+                  <div class="node-title">EPISODE 2: PASSING</div>
+                </header>
+                <article>
+                  <p>Five years later, A third faction appeared. Named Al'Asad Education, they claimed that their classes can improve the students' exam score. The MENTORS selected three students and formed Task Force 320, and sent them to investigate the third faction. During an undercover mission, a member of the Task Force was captured.</p>
+                  <p>As the investigation goes on, the Task Force found an unusual connection between the third faction and the MENTORS. In the same time, Al'Asad Education managed to turn a radical group of students against the school. During a raid to a base of Al'Asad Education, TF320 rescued their captured member and tried to cease the destructive uprising.</p>
+                  <p>Fearing that TF320 might have discovered their plot, the MENTORS ambushed TF320. All but one menber were captured and executed. The last member of TF320, named Shrink, was rescued by a stranger, who later turned out to be Dongqi Wang, the hero from episode 1.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holidays</div><br>
+                  <div class="node-title">EPISODE 3: DISTANT LANDSs</div>
+                </header>
+                <article>
+                  <p>A month after episode 2, the radical group launched an attack on the school's facilites. The uprising was supressed by brute force, and using it as an excuse, the MENTORS announced that all holidays will be cancelled. In the same time, Dongqi Wang and Shrink came up with a plan that will take down the MENTORS' insitituion step by step.</p>
+                  <p>With the help of some menbers of the NOVICE, they managed to sabotage the MENTORS' main military force and financial income. However, in order to confront the leader of the MENTORS, Wang had to deliberately walk into a trap. Wang sacrificed himself for a chance to strike.</p>
+                  <p>After officially joining the NOVICE, Shrink infaltrated the office of the MENTORS, where he defeated the leader of the MENTORS. The leader of the NOVICE, in the same time, assassinated the leader of Al'Asad Education. Finally, using the power of Weizi Stamp, they were able to restore the school to its previous glory.</p>
+                </article>
+                <footer>
+                  <a href="http://v.youku.com/v_show/id_XMzU1MDI1MDQ0.html" class="btn"> WATCH ON YOUKU </a>
+                </footer>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">A World without Holidays</div><br>
+                  <div class="node-title">FUTURE ASPECTS</div>
+                </header>
+                <article>
+                  <p>Despite the glorious ending of the final episode, I do have a future plan for the A World without Holidays series. The story will be taken place in the future, when the situation is more complex and unfriendly.</p>
+                  <p>The plan for the next work is codenamed Icy Rain Downpour, but the time of implementation is unavailable.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">A WORLD WITHOUT HOLIDAYS</div>
+            <div class="sequence-desc">THE TRILOGY: HARMORIZATION, PASSING, AND DISTANT LANDS.</div>
+            <span class="label">MULTIMEDIA</span>
+            <div class="image"><img src="assets/awwh3yrs.jpg" alt="A WORLD WITHOUT HOLIDAYS"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">FAREWELL NSFLS</div><br>
+                  <div class="node-title">INTRODUCTION</div>
+                </header>
+                <article>
+                  <p>"FAREWELL NSFLS" is my high school graduation-memorial video which was made in June 2011 and displayed on our graduation ceremony. This video reminds of the viewers of the vicissitudes of the past senior high years and expects a bright future ahead of everyone.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">FAREWELL NSFLS</div><br>
+                  <div class="node-title">AUTHOR'S COMMENTARY</div>
+                </header>
+                <article>
+                  <p>I have used some of my favourite soundtracks in this video, including Ezio's Family. In the epilogue, two girls were talking about the meaning of the past three years when the music fade in, and with the image of our school slowly moving out of sight, the audience realise that they will leave the place they lived and studied. The whole scene was very moving.</p>
+                  <p>The epilogue was adapted from Assassin's Creed II, the night before the tragedy fell upon his family. He and his brother climbed up a tower, and said:</p>
+                  <p>-"It is a good life we lead, brother." -"The best. May it never change." -"And may it never change us."</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">FAREWELL NSFLS</div>
+            <div class="sequence-desc">THE MEMORY MY SENIOR HIGH GRADUATION</div>
+            <span class="label">MULTIMEDIA</span>
+            <div class="image"><img src="assets/fnsfls.jpg" alt="FAREWELL NSFLS"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SECRETS OF FASHION</div><br>
+                  <div class="node-title">SUMMARY</div>
+                </header>
+                <article>
+                  <p>"THE SECRETS OF FASHION" is a project of HUST FOCUS.COM consisting of four topics: pop music, pop words, pop jokes, and the recent Nobel Prize winner Mo Yan.</p>
+                  <p>This project is designed and developed by SFEI. The credits of its content goes to the rest of the Focus.com team.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">SECRETS OF FASHION</div>
+                  <br>
+                  <div class="node-title">DESIGN NOTES</div>
+                </header>
+                <article>
+                  <p>As this projects consists of four topics, I assigned a color to each topic, and use the specific color in the corresponding section. Atop the page a placed a carousel, which will display a typical image of each topic. As all articles were arranged in the same page, there is a navigation pane at the left of the page, which displays the current location by hightlighting a link.</p>
+                  <p>It's worth noting that some users complained that the practice of putting all articles in the same page is "too crowded".</p>
+                  <p>Overall, I believe this project is of average, and it represents my design style at the time of the making of this project.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">FASHION'S SECRETS</div>
+            <div class="sequence-desc">A FOCUS.COM PROJECT ABOUT FASHION</div>
+            <span class="label">DESIGN</span> <span class="label">DEVELOP</span>
+            <div class="image"><img src="assets/sfashion.jpg" alt="SECRETS OF FASHION"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="seq-group">
+    <div class="seq-indicator pull-left"></div>
+    <div class="seq-group-body">
+      <header id="trigger-about" class="seq-grouptitle">ABOUT</header>
+      <ul class="seq-group-list">
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ABOUT SFEI</div><br>
+                  <div class="node-title">WHO AM I</div>
+                </header>
+                <article>
+                  <p>I AM A DESIGNER.</p>
+                  <p>I AM A DEVELOPER.</p>
+                  <p>I AM THE DREAM WEAVER.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ABOUT SFEI</div><br>
+                  <div class="node-title">WHAT I DO</div>
+                </header>
+                <article>
+                  <p>I CODE.</p>
+                  <p>I INNOVATE.</p>
+                  <p>I BRING DREAMS INTO REALITY.</p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ABOUT SFEI</div><br>
+                  <div class="node-title">HOW I DO IT</div>
+                </header>
+                <article>
+                  <p>I ANALYSIS.</p>
+                  <p>I EXPERIMENT.</p>
+                  <p>I PURSUE THE PERFECT ARCHITECHTURE.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">ABOUT SFEI</div>
+            <div class="sequence-desc">INFORMATION ABOUT THE AUTHOR</div>
+            <span class="label">ABOUT</span>
+            <div class="image"><img src="assets/aboutsfei.jpg" alt="ABOUT SFEI"></div>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">ABOUT ISN</div><br>
+                  <div class="node-title">DESIGN CONCEPT</div>
+                </header>
+                <article>
+                  <p>The design of this webpage is inspired by the DNA Tracker of the Assassin's Creed Series. Like the DNA tracker, this webpage has mulitple sequences available to expand and read the information in each node.</p>
+                  <p>With the increase in the amount of the seuqences, some sequence will eventually move out of the screen. That's why when moving to the sequence on the right, the sequence container will move left a bit, thus making the active sequence located around the middle of the screen.</p>
+                  <p>Currently this webpage is static. But after the development of my API Server (possibly SFEI Systems v3.5.x) I will add a js plugin that will fetch new projects from my server.</p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">ABOUT ISN</div>
+            <div class="sequence-desc">CONCEPT OF IMAGING SEQUENTIAL NETWORK</div>
+            <span class="label">ABOUT</span>
+            <div class="image"><img src="assets/isn.jpg" alt="ABOUT ISN"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="seq-group">
+    <div class="seq-indicator pull-left"></div>
+    <div class="seq-group-body">
+      <header id="trigger-contact" class="seq-grouptitle">CONTACT</header>
+      <ul class="seq-group-list">
+        <li class="sequence">
+          <ul>
+            <li class="seq-node">
+              <a href="#"></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">CONTACT SFEI</div><br>
+                  <div class="node-title">NEW BUSINESS</div>
+                </header>
+                <article>
+                  <p>As I am still a student in college, I cannot take many business requests. But if you'd like to give me a design/development job, I will welcome that. Currently I can accept two types of jobs: design (poster, book cover, or other 2d design) and develop (web front-end). You can send the details of your project to <a href="mailto:akasfei@gmail.com">akasfei@gmail.com</a></p>
+                </article>
+              </div>
+            </li>
+            <li class="seq-node">
+              <a href=""></a>
+              <div class="seq-node-content">
+                <header>
+                  <div class="sequence-title">CONTACT SFEI</div><br>
+                  <div class="node-title">SAY HELLO</div>
+                </header>
+                <article>
+                  <p>I'm always eager to hear from people of the same interest. If you'd like to pick up a chat with me, I will most certainly welcome. Please send an email to: <a href="mailto:akasfei@gmail.com">akasfei@gmail.com</a></p>
+                </article>
+              </div>
+            </li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">CONTACT SFEI</div>
+            <div class="sequence-desc">CONTACT INFORMATION</div>
+            <span class="label">INFORMATION</span>
+            <div class="image"><img src="assets/contact.jpg" alt="CONTACT SFEI"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TEMPLATE
+
+  <div class="seq-group">
+    <div class="seq-indicator pull-left"></div>
+    <div class="seq-group-body">
+      <header id="trigger-projects" class="seq-grouptitle">GROUP</header>
+      <ul class="seq-group-list">
+        <li class="sequence">
+          <ul>
+            <li class="seq-node"><a href="#"></a></li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">SEQUENCE #</div>
+            <div class="sequence-desc">DESCRIPTION OF SEQUENCE #</div>
+            <span class="label">LABEL</span>
+          </div>
+        </li>
+        <li class="sequence">
+          <ul>
+            <li class="seq-node"><a href="#"></a></li>
+          </ul>
+          <div class="sequence-caption">
+            <div class="sequence-title">SEQUENCE #</div>
+            <div class="sequence-desc">DESCRIPTION OF SEQUENCE #</div>
+            <span class="label">LABEL</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  END TEMPLATE --> 
+
+</div><!-- END CONTAINER -->
+
+<footer class="footer-links active">
+  <span><a href="http://northstar.cloudfoundry.com">IDN</a></span><span><img alt="SFEI LOGO" src="img/sfei-logo.svg"></span><span><a href="https://github.com/akasfei"><i class="icon-github"></i></a></span>
+</footer>
+
+<footer class="key-hint-container">
+  <div>KEYBOARD SHORTCUTS AVAILABLE</div>
+  <div class="hint-node"><span><i class="icon-resize-vertical"></i> BROWSE</span></span> <span><i>BACKSPACE</i> - ZOOM OUT</span></div>
+  <div class="hint-seq"><span><i class="icon-resize-horizontal"></i> BROWSE</span> <span><i>ENTER</i> - ZOOM IN</span> <span><i>BACKSPACE</i> - ZOOM OUT</span></div>
+  <div class="hint-group active"><span><i>ENTER</i> - ZOOM IN</span></div>
+</footer>
+<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 </body>
