@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="550px" height="200px" viewBox="0 0 550 200" enable-background="new 0 0 550 200" xml:space="preserve">
+<g>
+	
+		<rect x="53.318" y="53.317" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -32.5452 78.573)" fill="#FFFFFF" width="50.508" height="50.508"/>
+	
+		<rect x="96.174" y="10.46" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10.3125 96.324)" fill="#FFFFFF" width="50.508" height="50.508"/>
+	
+		<rect x="96.175" y="96.175" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -50.2975 121.4274)" fill="#FFFFFF" width="50.507" height="50.507"/>
+	
+		<rect x="53.318" y="139.032" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -93.1548 103.6768)" fill="#FFFFFF" width="50.507" height="50.507"/>
+	
+		<rect x="139.032" y="53.317" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -7.4397 139.1817)" opacity="0.2" fill="#FFFFFF" width="50.508" height="50.508"/>
+	
+		<rect x="10.461" y="96.175" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -75.4022 60.8188)" opacity="0.2" fill="#FFFFFF" width="50.507" height="50.507"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M182,64h320c0,0-166.301,78.181-320,96c159.805-9.087,320-79,320-79l16-17h16v96H182V64z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-miterlimit="10" points="382,72 302,72 
+			270,72 190,72 190,112 270,112 270,152 190,152 		"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-miterlimit="10" points="526,96 
+			526,152 494,152 414,152 414,72 494,72 494,112 414,112 382,112 302,112 302,152 		"/>
+	</g>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M512.274,52.786c-0.296,2.471-0.734,4.93-0.914,7.419
+	c-0.593,7.398,0.153,15.855,7.317,19.924c4.007,2.259,9.025,2.353,13.496,1.654c-5.647,0.896-11.215-3.752-13.981-8.25
+	c-0.948-1.548-1.511-3.262-1.763-5.032c-0.243-1.7-0.316-3.528-1.46-4.912c6.591,8.039,16.745,19.765,28.229,13.285
+	c-3.077,1.756-7.342-3.108-8.57-5.468c-1.634-3.115-1.721-7.128-4.629-9.476c-2.529-2.069-5.918-2.421-9.005-3.22
+	C518.32,57.974,511.818,56.699,512.274,52.786L512.274,52.786z"/>
+</svg>
