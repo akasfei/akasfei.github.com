@@ -19,6 +19,10 @@ $(document).ready(function (e){
     tablink.tab('show');
   });
 
+  $('.container').click(function (e){
+    $('.img-container.active').removeClass('active');
+  });
+
 
   /* a sequence or its nodes are clicked */
   $('.sequence').on('click', '.seq-node', function (e){
@@ -35,6 +39,8 @@ $(document).ready(function (e){
       $seq.addClass('active');
       $('.seq-group').removeClass('active').removeClass('zoomed');
       $group.addClass('zoomed');
+      $('.key-hint-container > [class^="hint-"]').removeClass('active');
+      $('.key-hint-container > .hint-seq').addClass('active');
       return;
     }
     $seq.removeClass('active');
@@ -44,8 +50,12 @@ $(document).ready(function (e){
         return;
       $seq.removeClass('zoomed');
       $seq.addClass('active');
+      $('.key-hint-container > [class^="hint-"]').removeClass('active');
+      $('.key-hint-container > .hint-seq').addClass('active');
       return $this.removeClass('active');
     }
+    $('.key-hint-container > [class^="hint-"]').removeClass('active');
+    $('.key-hint-container > .hint-node').addClass('active');
     $('.sequence.zoomed .seq-node').removeClass('active');
     $this.addClass('active');
   }); 
@@ -58,6 +68,8 @@ $(document).ready(function (e){
     $('.seq-group').removeClass('active').removeClass('zoomed');
     $('.container').addClass('default');
     $this.addClass('active');
+    $('.key-hint-container > [class^="hint-"]').removeClass('active');
+    $('.key-hint-container > .hint-group').addClass('active');
   });
 
   $('.seq-indicator, .seq-grouptitle').click(function (e) {
@@ -67,20 +79,32 @@ $(document).ready(function (e){
   });
 
   /* Clicking title links */
-  $('.title-link').click(function (e) {
-    var target = $(this).attr('data-target');
+  $('.anchor-link').click(function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
     $(target).click();
   });
 
   /* keyboard controls */
-  $('html').keydown(function (e) {
+  $(document).keydown(function (e) {
     var $this = $('.active');
     var $target = null;
+    var doPrevent = false;
+    if (event.keyCode === 8) {
+      var d = event.srcElement || event.target;
+      if ((d.tagName.toUpperCase() === 'INPUT' && (d.type.toUpperCase() === 'TEXT' || d.type.toUpperCase() === 'PASSWORD')) || d.tagName.toUpperCase() === 'TEXTAREA') {
+        doPrevent = d.readOnly || d.disabled;
+      }
+      else {
+        doPrevent = true;
+      }
+    }
+    if (doPrevent) {
+      event.preventDefault();
+    }
     if ($this.hasClass('seq-node')) {
       switch (e.which){
         case 8:
-        case 13:
-        case 32:
           $target = $this;
           break;
         case 37:

@@ -17,22 +17,27 @@
 </head>
 
 <body>
-<header class="img-container">
-  <a href="#" class="title-link" data-target="#trigger-intro">INTRO</a>
-  <a href="#" class="title-link" data-target="#trigger-projects">PROJECTS</a>
-  <a href="#" class="title-logo switcher_"><img src="img/pyramid-circle-medium.png" alt="Pyramid"></a>
-  <a href="#" class="title-link" data-target="#trigger-about">ABOUT SFEI</a>
-  <a href="#" class="title-link" data-target="#trigger-contact">CONTACT</a>
+<header class="img-container active">
+  <a href="#trigger-intro" class="title-link anchor-link">INTRO</a>
+  <a href="#trigger-projects" class="title-link anchor-link">PROJECTS</a>
+  <a href="#" class="title-logo switcher_"><img src="img/pyramid-circle-03.svg" alt="Pyramid"></a>
+  <a href="#trigger-about" class="title-link anchor-link">ABOUT</a>
+  <a href="#trigger-contact" class="title-link anchor-link">CONTACT</a>
+  <div class="typography">
+    <h1>WELCOME TO ISN.</h1>
+    <div><a href="#trigger-intro" class="btn btn-primary anchor-link"> TAKE A TOUR </a> <a href="#" class="btn deactivate-header"> VIEW SEQUENCES </a></div>
+
+  </div>
 </header>
 <div class="container default">
   <div class="seq-group">
     <div class="seq-indicator pull-left"></div>
     <div class="seq-group-body">
-      <header id="trigger-intro" class="seq-grouptitle">INTRODUCTION</header>
+      <header class="seq-grouptitle">INTRODUCTION</header>
       <ul class="seq-group-list">
         <li class="sequence">
           <ul>
-            <li class="seq-node">
+            <li id="trigger-intro" class="seq-node">
               <a href="#"></a>
               <div class="seq-node-content">
                 <header>
@@ -64,7 +69,7 @@
           </ul>
           <div class="sequence-caption">
             <div class="sequence-title">WELCOME</div>
-            <div class="sequence-desc">LEARN MORE ABOUT THIS WEBSITE AND ITS AUTHOR</div>
+            <div class="sequence-desc">PRESS ENTER LEARN MORE ABOUT THIS WEBSITE</div>
             <span class="label">INFORMATION</span>
           </div>
         </li>
@@ -674,7 +679,19 @@
   </div>
 
   END TEMPLATE --> 
-</div>
+
+</div><!-- END CONTAINER -->
+
+<footer class="footer-links active">
+  <span><a href="http://northstar.cloudfoundry.com">IDN</a></span><span><img alt="SFEI LOGO" src="img/sfei-logo.svg"></span><span><a href="https://github.com/akasfei"><i class="icon-github"></i></a></span>
+</footer>
+
+<footer class="key-hint-container">
+  <div>KEYBOARD SHORTCUTS AVAILABLE</div>
+  <div class="hint-node"><span><i class="icon-resize-vertical"></i> BROWSE</span></span> <span><i>BACKSPACE</i> - ZOOM OUT</span></div>
+  <div class="hint-seq"><span><i class="icon-resize-horizontal"></i> BROWSE</span> <span><i>ENTER</i> - ZOOM IN</span> <span><i>BACKSPACE</i> - ZOOM OUT</span></div>
+  <div class="hint-group active"><span><i>ENTER</i> - ZOOM IN</span></div>
+</footer>
 <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
