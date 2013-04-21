@@ -62,6 +62,8 @@ $(document).ready(function (e){
       $('.key-hint-container > .hint-seq').addClass('active');
       return $this.removeClass('active');
     }
+    var nodeIndex = $seq.find('.seq-node').index($this);
+    $this.children('.seq-node-content').css('top', -100 - 24*nodeIndex + 'px');
     $('.key-hint-container > [class^="hint-"]').removeClass('active');
     $('.key-hint-container > .hint-node').addClass('active');
     $('.sequence.zoomed .seq-node').removeClass('active');
