@@ -223,7 +223,7 @@ body > header .typography .btn {
 
 body > header.active {
   widows: 3200px;
-  height: 800px;
+  height: 1000px;
 }
 
 body > header.active .typography {
@@ -675,21 +675,71 @@ body > header.active > .title-link {
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1199px) {
+@media (min-width: 1013px) and (max-width: 1199px) {
   .container.default {
     margin-left: 60px !important;
   }
+  body > header .title-link {
+    font-size: 24px;
+    line-height: 26px;
+    min-width: 160px;
+  }
 }
 
-@media (min-width: 900px) and (max-width: 999px) {
+@media (min-width: 900px) and (max-width: 1012px) {
   .container.default {
     margin-left: 40px !important;
+  }
+  body > header .title-link {
+    font-size: 20px;
+    line-height: 22px;
+    min-width: 130px;
   }
 }
 
 @media (max-width: 899px) {
   .container.default {
     margin-left: 20px !important;
+  }
+  body > header .title-link {
+    font-size: 20px;
+    line-height: 22px;
+    min-width: 120px;
+  }
+  body > header.active > .title-logo {
+    width: 240px;
+    height: 240px;
+    background-size: 200px 200px;
+  }
+
+  body > header.active > .title-logo > img {
+    margin-top: 20px;
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  body {
+    padding: 0;
+  }
+  body > header > .title-logo,
+  body > header.active > .title-logo {
+    width: 120px;
+    height: 120px;
+    background-size: 100px 100px;
+  }
+  body > header > .title-logo > img,
+  body > header.active > .title-logo > img {
+    margin-top: 10px;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  body > header .title-link {
+    margin-top: 80px;
+  }
+  body > header {
+    height: 120px;
   }
 }
 
