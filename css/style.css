@@ -253,7 +253,6 @@ body > header.active > .title-link {
 }
 
 .seq-group {
-  float: left;
   margin-right: 16px;
   opacity: 0.6;
   -webkit-transition: all 0.3s ease;
@@ -264,6 +263,7 @@ body > header.active > .title-link {
 
 .seq-group,
 .seq-group-body {
+  float: left;
   position: relative;
   display: inline-block;
 }
