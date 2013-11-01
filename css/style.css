@@ -141,6 +141,9 @@ body > header,
 /*.title-logo:hover {
   background-position: 20px -180px;
 }*/
+body > header {
+  min-height: 100px;
+}
 body > header:not(.active) .title-logo:hover > img {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -222,8 +225,7 @@ body > header .typography .btn {
 }
 
 body > header.active {
-  widows: 3200px;
-  height: 1000px;
+  min-height: 100%;
 }
 
 body > header.active .typography {
