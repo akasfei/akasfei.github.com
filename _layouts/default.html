@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Custom CSS -->
+  <link rel='stylesheet' href='css/bootstrap.min.css' />
+  <link rel='stylesheet' href='css/font-awesome.min.css' />
+  <link rel='stylesheet' href='css/style.css' />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="./assets/js/html5shiv.js"></script>
+    <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/ico/apple-touch-icon-72-precomposed.png">
+                  <link rel="apple-touch-icon-precomposed" href="./img/ico/apple-touch-icon-57-precomposed.png">
+                                 <link rel="shortcut icon" href="./img/ico/favicon.png">
+
+</head>
+<body>
+<header class="img-container active">
+  <a href="#trigger-firstgroup" class="title-link anchor-link">INTRO</a>
+  <a href="#trigger-projects" class="title-link anchor-link">PROJECTS</a>
+  <a href="#" class="title-logo switcher_"><img src="img/pyramid-circle-03.svg" alt="Pyramid"></a>
+  <a href="#trigger-about" class="title-link anchor-link">ABOUT</a>
+  <a href="#trigger-contact" class="title-link anchor-link">CONTACT</a>
+  <div class="typography">
+    <h1>WELCOME TO ISN.</h1>
+    <p>&lt;SFEI SYSTEMS IMAGING SEQUENTIAL NETWORK/&gt;</p>
+    <div><a href="#trigger-intro" class="btn btn-primary anchor-link"> TAKE A TOUR </a> <a href="#" class="btn deactivate-header"> VIEW SEQUENCES </a></div>
+  </div>
+</header>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

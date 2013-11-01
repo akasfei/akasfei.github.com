@@ -1,0 +1,10 @@
+{
+  "name": "SFEI-Systems-ISN",
+  "version": "1.0.1",
+  "description": "Essential components to start a static website using Bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akasfei/akasfei.github.com"
+  },
+  "author": "SFEI Systems Inc."
+}
