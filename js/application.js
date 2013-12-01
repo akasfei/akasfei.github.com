@@ -9,7 +9,7 @@ $(document).ready(function (e){
     $('.sequence-body[data-seq="' + $this.attr('data-seq') + '"]').addClass('active').fadeIn(600);
   })
   */
-  var marginLeft = parseInt($('.container').css('margin-left'));
+  var marginLeft = parseInt($('.container').css('margin-left'), 10);
 
   $('.switcher_').click(function (e){
     var $this = $(this);
