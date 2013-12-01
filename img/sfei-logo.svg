@@ -1,39 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="550px" height="200px" viewBox="0 0 550 200" enable-background="new 0 0 550 200" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="110px" height="40px" viewBox="0 0 110 40" xml:space="preserve">
 <g>
 	
-		<rect x="53.318" y="53.317" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -32.5452 78.573)" fill="#FFFFFF" width="50.508" height="50.508"/>
+		<rect x="11.664" y="10.663" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.2161 16.4217)" fill="#FFFFFF" width="10.102" height="10.102"/>
 	
-		<rect x="96.174" y="10.46" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10.3125 96.324)" fill="#FFFFFF" width="50.508" height="50.508"/>
+		<rect x="20.235" y="2.092" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2.3554 19.9719)" fill="#FFFFFF" width="10.102" height="10.102"/>
 	
-		<rect x="96.175" y="96.175" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -50.2975 121.4274)" fill="#FFFFFF" width="50.507" height="50.507"/>
+		<rect x="20.235" y="19.235" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.7666 24.9926)" fill="#FFFFFF" width="10.101" height="10.101"/>
 	
-		<rect x="53.318" y="139.032" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -93.1548 103.6768)" fill="#FFFFFF" width="50.507" height="50.507"/>
+		<rect x="11.664" y="27.806" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.3381 21.4425)" fill="#FFFFFF" width="10.101" height="10.101"/>
 	
-		<rect x="139.032" y="53.317" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -7.4397 139.1817)" opacity="0.2" fill="#FFFFFF" width="50.508" height="50.508"/>
+		<image width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGNJREFUeNpiYMAD/v//bwzCuOQZ
+8WlEUcjIeJYozbhsQzeAkViN2AxgJEUjugGMpGpENoCRHI0wwESuRrBmBgoA2c6G+5lUAzBCm1gD
+cMYzIQMIpjBcBhCdttENwKYRBAACDAAJ9zjRdKEcQQAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 26 8)">
+	</image>
 	
-		<rect x="10.461" y="96.175" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -75.4022 60.8188)" opacity="0.2" fill="#FFFFFF" width="50.507" height="50.507"/>
+		<image width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGJJREFUeNqck8ENACEIwKwruf8I
+zoTxYXJnAAFePmwBQZoRIjLOGZjaHV6gJyACWgKioCYgA94CsuBX0CvgiV4Fd9IyvMsu9fx7sIxA
+HVVE4C6JJwitpyawPoY7ilcbS4ABABC/OaIISVAEAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 1 17)">
+	</image>
 </g>
 <g>
-	<defs>
-		<path id="SVGID_1_" d="M182,64h320c0,0-166.301,78.181-320,96c159.805-9.087,320-79,320-79l16-17h16v96H182V64z"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-miterlimit="10" points="382,72 302,72 
-			270,72 190,72 190,112 270,112 270,152 190,152 		"/>
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-miterlimit="10" points="526,96 
-			526,152 494,152 414,152 414,72 494,72 494,112 414,112 382,112 302,112 302,152 		"/>
-	</g>
+	<polygon fill="#FFFFFF" points="53.8,28.3 53.8,28.801 51.634,28.801 37.8,32 57,32 57,27.56 	"/>
+	<polygon fill="#FFFFFF" points="37.8,28.801 37.8,32 48.464,28.801 	"/>
+	<polygon fill="#FFFFFF" points="50.597,28.801 37.8,32 50.925,28.801 	"/>
+	<polygon fill="#FFFFFF" points="57,27.32 57,27.2 53.8,28 53.8,28.1 	"/>
+	<polygon fill="#FFFFFF" points="37.8,24 53.8,24 53.8,27.2 57,26.24 57,20.8 41,20.8 41,16 79.399,16 79.399,12.8 37.8,12.8 	"/>
+	<polygon fill="#FFFFFF" points="101.8,16 98.601,16.8 98.601,17.18 101.8,16.4 	"/>
+	<polygon fill="#FFFFFF" points="105,17.6 105,28.801 85.8,28.801 85.8,24 101.8,24 101.8,17.2 98.601,17.94 98.601,20.8 
+		86.231,20.8 72.395,24 82.601,24 82.601,32 108.199,32 108.199,17.6 	"/>
+	<polygon fill="#FFFFFF" points="101.8,12.8 82.601,12.8 82.601,18.56 85.8,17.6 85.8,16 91.133,16 101.8,12.8 	"/>
+	<polygon fill="#FFFFFF" points="63.399,25.6 60.2,26.4 60.2,26.54 63.399,25.76 	"/>
+	<polygon fill="#FFFFFF" points="82.601,20.8 82.601,20.8 82.599,20.8 69.8,24 70.62,24 85.8,20.3 85.8,20 	"/>
+	<polygon fill="#FFFFFF" points="60.2,26.82 60.2,32 63.399,32 63.399,26.08 	"/>
+	<polygon fill="#FFFFFF" points="60.2,20.8 60.2,25.28 63.399,24.32 63.399,24 64.467,24 75.132,20.8 	"/>
 </g>
-<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M512.274,52.786c-0.296,2.471-0.734,4.93-0.914,7.419
-	c-0.593,7.398,0.153,15.855,7.317,19.924c4.007,2.259,9.025,2.353,13.496,1.654c-5.647,0.896-11.215-3.752-13.981-8.25
-	c-0.948-1.548-1.511-3.262-1.763-5.032c-0.243-1.7-0.316-3.528-1.46-4.912c6.591,8.039,16.745,19.765,28.229,13.285
-	c-3.077,1.756-7.342-3.108-8.57-5.468c-1.634-3.115-1.721-7.128-4.629-9.476c-2.529-2.069-5.918-2.421-9.005-3.22
-	C518.32,57.974,511.818,56.699,512.274,52.786L512.274,52.786z"/>
+<g>
+	
+		<rect x="104.603" y="12.027" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 190.87 -52.4609)" fill="#FFFFFF" width="3.394" height="2.546"/>
+	
+		<image width="3" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB5JREFUeNpiZACC////N4BoJhgD
+zIExGBkZGwACDADF+geDtqqIQAAAAABJRU5ErkJggg==" transform="matrix(1 0 0 1 106 13)">
+	</image>
+</g>
 </svg>
