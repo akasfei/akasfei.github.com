@@ -1,0 +1,61 @@
+title: 'Introduction'
+sequences:
+  - title: 'Welcome'
+    subtitle: 'Learn more about this website'
+    tags: ['Information']
+    nodeindicator: 'Introductory Sequence'
+    coverimg: 'assets/intro.jpg'
+    nodes:
+      - title: 'What is SFEI Systems ISN?'
+        content: >
+          I-S-N stands for Imaging Sequential Network. It is associated with 
+          SFEI Systems, which is named after its author, SFEI. It is a website 
+          which stores SFEI\'s hightlighted projects as well as a brief 
+          introduction of himself.
+          \n\n
+          ISN features a sequantial layout, including sequence groups, 
+          sequences, and sequence nodes. Sequences with different catagories 
+          are arranged in different sequence groups and each sequence 
+          represents a specific topic. A sequence consists of several nodes, 
+          which represents articles explaining the corresponding topic.
+          \n\n
+          You can use arrow keys, enter and backspace to navigate through 
+          the nodes and sequences.
+        footer: >
+          <a href="#intro-more" class="btn btn-primary anchor-link">CONTINUE</a> <a href="#" class="btn">ABOUT SFEI</a>
+
+      - title: 'What can I find in this Website?'
+        content: >
+          The main contents of this website are SFEI's highlighted projects.
+          You will be able to find them by clicking the PROJECTS link in the 
+          navigation bar. You can also navigate to the Projects sequence group 
+          by either mouse or keyboard.
+          \n\n
+          You will also be able to find a brief about SFEI, as well as SFEI's 
+          contact information. They are located in the ABOUT and CONTACT group.
+        footer: >
+          <a href="#featured" class="btn btn-primary anchor-link">SEE WHAT\'S FEATURED</a>
+
+  - title: 'Help'
+    subtitle: 'System operating reference'
+    tags: ['Information']
+    nodeindicator: 'Operating Reference'
+    coverimg: 'assets/help.jpg'
+    nodes:
+      - title: 'Keyboard Shortcuts'
+        content: >
+          You can use `ARROW KEYS`, `ENTER` and `BACKSPACE` to navigate through 
+          the nodes and sequences. Specific key navigations are:
+          \n\n
+          When a sequence node is active, use ↑ and ↓ keys to navigate through
+          other nodes. Use ← and → keys to move to the next or previous sequence.
+          Use `ENTER` to active the default button (the blue one), and 
+          `BACKSPACE` to move up to the parent sequence.
+          \n\n
+          When a sequence is active, use ← and → keys to navigate through other 
+          sequences. Use ↑ and ↓ keys to activate the last or first node in this
+          sequence. Use `ENTER` to active the first node, and `BACKSPACE` to 
+          move up to the parent sequence group.
+          \n\n
+          When a sequence group is active, use ← and → keys to navigate through 
+          other groups. Use `ENTER` to active the first sequence in this group.

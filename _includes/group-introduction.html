@@ -1,0 +1,40 @@
+<div class="seq-group">
+  <div class="seq-indicator pull-left"></div>
+  <div class="seq-group-body">
+    <header id="trigger-firstgroup" class="seq-grouptitle">{{ site.data.intro.title }}</header>
+    <ul class="seq-group-list">
+      {% for sequence in site.data.intro.sequences %}
+      <li class="sequence">
+        <ul>
+          {% for node in sequence.nodes %}
+          <li id="trigger-intro" class="seq-node">
+            <a href="#"></a>
+            <div class="seq-node-content">
+              <header>
+                <div class="sequence-title">{{ sequence.nodeindicator }}</div><br>
+                <div class="node-title">{{ node.title }}</div>
+              </header>
+              <article>
+                {% capture content-md %}{{ node.content }}{% endcapture %}
+                {{ content-md | markdownify }}
+              </article>
+              <footer>
+                {{ node.footer }}
+              </footer>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="sequence-caption">
+          <div class="sequence-title">{{ sequence.title }}</div>
+          <div class="sequence-desc">{{ sequence.subtitle }}</div>
+          {% for tag in sequence.tags %}
+          <span class="label">{{ tag }}</span>
+          {% endfor %}
+          <div class="image"><img src="{{ sequence.coverimg }}" alt="{{ sequence.title }}"></div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
