@@ -13,6 +13,22 @@ module.exports = function(grunt) {
               '*/\n',
     jqueryCheck: 'if (!jQuery) { throw new Error(\"jQuery is required\") }\n\n',
 
+    assemble: {
+      // Task-level options
+      options: {
+        prettify: {indent: 2},
+        marked: {sanitize: false},
+        production: grunt.file.readJSON('package.json').production,
+        data: '_data/*.{json,yml}',
+        layout: '_layouts/index.html',
+        partials: ['_includes/*.html'],
+      },
+      site: {
+        src: '_includes/index.html', 
+        dest: './index.html'
+      }
+    },
+
     jshint: {
       options: {
         jshintrc: 'js/.jshintrc'
@@ -84,10 +100,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('assemble');
 
   grunt.registerTask('build', ['less', 'concat', 'uglify']);
 
-  grunt.registerTask('default', ['jshint', 'build']);
+  grunt.registerTask('default', ['jshint', 'build', 'assemble']);
 
   grunt.registerTask('dev', ['default', 'watch']);
 

@@ -1,0 +1,40 @@
+<div class="seq-group">
+  <div class="seq-indicator pull-left"></div>
+  <div class="seq-group-body">
+    <header id="trigger-firstgroup" class="seq-grouptitle">{{ title }}</header>
+    <ul class="seq-group-list">
+      {{#each sequences }}
+      <li class="sequence">
+        <ul>
+          {{#each nodes}}
+          <li id="trigger-intro" class="seq-node">
+            <a href="#"></a>
+            <div class="seq-node-content">
+              <header>
+                <div class="sequence-title">{{ nodeindicator }}</div><br>
+                <div class="node-title">{{ nodetitle }}</div>
+              </header>
+              <article>
+                                  {{ content }}
+               
+              </article>
+              <footer>
+                {{ footer }}
+              </footer>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+        <div class="sequence-caption">
+          <div class="sequence-title">{{ seqtitle }}</div>
+          <div class="sequence-desc">{{ subtitle }}</div>
+          {{#each tags}}
+          <span class="label">{{.}}</span>
+          {{/each}}
+          <div class="image"><img src="{{ coverimg }}" alt="{{ seqtitle }}"></div>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
