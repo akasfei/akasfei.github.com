@@ -76,6 +76,9 @@ a:focus {
   background: #456;
   text-shadow: 0 1px 1px rgba(32, 48, 64, 0.5);
   font-size: 16px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -webkit-transition: background 0.2s ease;
   -moz-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
@@ -88,8 +91,14 @@ a:focus {
 .btn.btn-primary {
   background: #345373;
 }
-.btn.btn-primary:hover {
+.btn.btn-primary:hover,
+.btn.btn-primary:active {
   background: #23588c;
+}
+.label {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 body > header {
   background: rgba(16, 24, 32, 0.4);
@@ -487,6 +496,10 @@ body > header.active > .title-link {
 .seq-node .seq-node-content > footer {
   background: rgba(0, 0, 0, 0.15);
   position: relative;
+}
+.seq-node .seq-node-content > article > img {
+  padding: 4px;
+  border: 1px solid #8291a1;
 }
 .seq-node .seq-node-content > header:before {
   content: '';
