@@ -1,6 +1,15 @@
+var adjustPosition = function($active) {
+  var $seq = $active.parents('.sequence');
+  var $group = $active.parents('.seq-group');
+  var seqPosition = $seq.offset().left;
+  var anchorPosition = $('.offset-anchor').offset().left;
+  var offset = anchorPosition - seqPosition;
+  $('.seg-container').css('margin-left', offset + 'px');
+}
+
 $(document).ready(function (e){
   
-  var marginLeft = parseInt($('.container').css('margin-left'), 10);
+  // var marginLeft = parseInt($('.container').css('margin-left'), 10);
 
   $('.title-logo').click(function (e) {
     $('#trigger-firstgroup').click();
@@ -22,10 +31,7 @@ $(document).ready(function (e){
     var $this = $(this);
     var $seq = $(this).parents('.sequence');
     var $group = $(this).parents('.seq-group');
-    var index = $seq.index('.sequence');
-    var offset = marginLeft - index*24;
-    $('.container').removeClass('default');
-    $('.container').css('margin-left', offset + 'px');
+    setTimeout(function () { adjustPosition($this); }, 20);
     if ( !($seq.hasClass('active') || $seq.hasClass('zoomed')) ) {
       $('.sequence, .seq-node.active').removeClass('active');
       $('.sequence').removeClass('zoomed');
@@ -63,6 +69,7 @@ $(document).ready(function (e){
     $this.addClass('active');
     $('.key-hint-container > [class^="hint-"]').removeClass('active');
     $('.key-hint-container > .hint-group').addClass('active');
+    $('.seg-container').attr('style', '');
   });
 
   $('.seq-indicator, .seq-grouptitle').click(function (e) {

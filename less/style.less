@@ -111,15 +111,18 @@ body > header{
 }
 
 .container {
+  -webkit-transition: width 0.2s ease;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.seg-container {
   width: 3200px;
   -webkit-transition: margin-left 0.2s ease;
   -moz-transition: margin-left 0.2s ease;
   -o-transition: margin-left 0.2s ease;
   transition: margin-left 0.2s ease;
-}
-
-.container.default {
-  margin-left: 200px !important;
 }
 
 .logo-container,
@@ -689,27 +692,16 @@ body > header.active > .title-link {
 
 
 @media (min-width: 1800px) {
-  .container.default {
-    margin-left: 360px !important;
-  }
+
 }
 
 @media (min-width: 1400px) and (max-width: 1799px){
-  .container.default {
-    margin-left: 240px !important;
-  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .container.default {
-    margin-left: 120px !important;
-  }
 }
 
 @media (min-width: 1013px) and (max-width: 1199px) {
-  .container.default {
-    margin-left: 60px !important;
-  }
   body > header .title-link {
     font-size: 24px;
     line-height: 26px;
@@ -718,9 +710,6 @@ body > header.active > .title-link {
 }
 
 @media (min-width: 900px) and (max-width: 1012px) {
-  .container.default {
-    margin-left: 40px !important;
-  }
   body > header .title-link {
     font-size: 20px;
     line-height: 22px;
@@ -729,9 +718,6 @@ body > header.active > .title-link {
 }
 
 @media (max-width: 899px) {
-  .container.default {
-    margin-left: 20px !important;
-  }
   body > header .title-link {
     font-size: 20px;
     line-height: 22px;
